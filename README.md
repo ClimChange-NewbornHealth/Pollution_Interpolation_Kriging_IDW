@@ -60,6 +60,12 @@ Daily air pollution observations were obtained from Chile’s National Air Quali
 
 Input monitoring series were pre-imputed prior to interpolation using previously generated imputed datasets.
 
+The spatial framework relies on the following geospatial inputs:
+
+- SINCA imputed series ([`Data/imputed_series.RData`](Data/imputed_series.RData)) containing daily monitoring station observations as `sf` objects.
+- Municipal administration building locations ([`Data/interpolation_locations.RData`](Data/interpolation_locations.RData)), used as interpolation targets at the municipal level.
+- Santiago municipality shapefiles ([`Data/municipalities_shape.RData`](Data/municipalities_shape.RData)) for spatial visualization and boundary definition.
+
 ### Spatial Interpolation Approaches
 
 Two complementary spatial interpolation methodologies were implemented:
@@ -142,26 +148,20 @@ The interpolation framework was originally designed to produce municipality-leve
 
 .
 ├── Code/
-│   ├── 1_interpolation.R             # Spatial interpolation workflow
-│   └── 2_visualization.R             # Static maps and animated GIF generation
+│ ├── 1_interpolation.R
+│ └── 2_visualization.R
 │
 ├── Data/
-│   ├── imputed_series.RData          # Imputed daily monitoring station observations (sf object)
-│   ├── interpolation_locations.RData # Municipality/building interpolation targets (sf object)
-│   └── municipalities_shape.RData    # Municipality polygon shapefile (sf object)
+│ ├── imputed_series.RData
+│ ├── interpolation_locations.RData
+│ └── municipalities_shape.RData
 │
-├── Figures/                          # Example figures and GIF outputs
+├── Figures/
 │
 ├── Output/
-│   └── interpolated_series.RData     # Final municipality-level interpolation dataset
+│ └── interpolated_series.RData
 │
 └── README.md
-
-## Data/Input
-
-- SINCA imputed series ([`Data/imputed_series.RData`](Data/imputed_series.RData))
-- Municipal administration building locations ([`Data/interpolation_locations.RData`](Data/interpolation_locations.RData))
-- Santiago shapefiles ([`Data/municipalities_shape.RData`](Data/municipalities_shape.RData))
 
 ## Result/Output
 
@@ -174,7 +174,6 @@ The interpolation framework was originally designed to produce municipality-leve
 - Visualization outputs include:
   - Customizable interpolation maps for user-defined individual date
   - Animated GIFs showing temporal changes over user-defined date ranges
-
 
 <p align="center">
   <img src="Figures/pm25_2019-07-02.png" width="22%">
