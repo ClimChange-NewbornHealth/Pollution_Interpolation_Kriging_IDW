@@ -63,7 +63,7 @@ Input monitoring series were pre-imputed prior to interpolation using previously
 The spatial framework relies on the following geospatial inputs:
 
 - SINCA imputed series ([`Data/imputed_series.RData`](Data/imputed_series.RData)) containing daily monitoring station observations as `sf` objects.
-- Municipal administration building locations ([`Data/interpolation_locations.RData`](Data/interpolation_locations.RData)), used as interpolation targets at the municipal level.
+- Municipal administration building locations ([`Data/interpolation_locations.RData`](Data/interpolation_locations.RData)), used as interpolation targets.
 - Santiago municipality shapefiles ([`Data/municipalities_shape.RData`](Data/municipalities_shape.RData)) for spatial visualization and boundary definition.
 
 ### Spatial Interpolation Approaches
