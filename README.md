@@ -16,7 +16,7 @@
 
 COMPLETE
 
-## Research Team and Conctact
+## Authors and Contact
 
 :mailbox: Estela Blanco (<estela.blanco@uc.cl>) - **Principal Investigator**
 
@@ -48,7 +48,7 @@ COMPLETE
 
 ## Methods
 
-- **Data source**: Daily pollutant concentrations from Chile’s National Air Quality Information System (SINCA). See [SINCA – Sistema de Información Nacional de Calidad del Aire](https://sinca.mma.gob.cl/).
+- **Data source**: Daily pollutant concentrations from Chile’s National Air Quality Information System (SINCA).
 - **Pollutants interpolated**: Fine particulate matter (PM2.5), ozone (O3), and nitrogen dioxide (NO2).
 - **Interpolation approaches**:
   - **Inverse Distance Weighting (IDW)** as a deterministic interpolation (`gstat` package).
@@ -99,23 +99,21 @@ COMPLETE (ADD STRUCTURE)
 
 ## Input
 
-- Imputed series
-- Municipal administration building locationes
-- shape
+- SINCA imputed series (`Data/imputed_series.RData`)
+- Municipal administration building locations (`Data/interpolation_locations.RData`)
+- Santiago shapefiles (`Data/municipalities_shape.RData`)
 
 ## Output
 
-- Daily municipality-level interpolated concentrations for:
-  - PM2.5
-  - O3
-  - NO2
-- Prediction outputs include:
+- Daily municipality-level interpolated concentrations for PM2.5, O3, and NO2 (`Output/interpolated_series.RData`). Prediction outputs include:
   - IDW predictions
-  - Ordinary Kriging predictions
-  - Kriging variance
-  - Lower and upper confidence intervals
+  - OK predictions
+  - OK variance
+  - OK lower and upper confidence intervals (user-defined alpha level)
 
-## Example Figures
+- Visualization outputs include:
+  - Customizable interpolation maps for user-defined individual date
+  - Animated GIFs showing temporal changes over user-defined date ranges
 
 <p align="center">
   <img src="Figures/pm25_2019-07-02.png" width="45%">
