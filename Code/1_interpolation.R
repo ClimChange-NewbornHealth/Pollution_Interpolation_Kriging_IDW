@@ -1,3 +1,28 @@
+#################
+### LIBRARIES ###
+#################
+
+# Data manipulation and visualization
+library(tidyverse)
+
+# Spatial vector data handling
+library(sf)
+
+# Spatial objects compatibility
+library(sp)
+
+# Read Excel files
+library(readxl)
+
+# Date handling
+library(lubridate)
+
+# Automatic variogram fitting for kriging
+library(automap)
+
+# Spatial interpolation methods
+library(gstat)
+
 ####################
 ### LOAD DATASET ###
 ####################
