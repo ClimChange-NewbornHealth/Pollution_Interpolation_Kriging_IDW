@@ -11,9 +11,6 @@ library(sf)
 # Spatial objects compatibility
 library(sp)
 
-# Read Excel files
-library(readxl)
-
 # Date handling
 library(lubridate)
 
@@ -35,7 +32,14 @@ library(gstat)
 # - A date column
 load("Data/imputed_series.RData")
 
-# Load municipality coordinates where interpolation will be performed
+# Load municipality or target-location coordinates where interpolation
+# and spatial prediction will be performed
+# The object should contain:
+# - Unique location identifiers
+# - Latitude and longitude or projected coordinates
+# - Municipality or administrative unit names
+# - The same coordinate reference system (EPSG) as the monitoring dataset
+#   to ensure consistency in distance-based interpolation
 load("Data/interpolation_locations.RData")
 
 ######################################
@@ -258,10 +262,7 @@ files <- list.files(
   full.names = TRUE
 )
 
-#####################
-### LOAD FUNCTION ###
-#####################
-
+# Load function
 load_interp <- function(f){
   
   # Load interpolation object
@@ -276,43 +277,28 @@ load_interp <- function(f){
   return(out)
 }
 
-##########################
-### SPLIT BY POLLUTANT ###
-##########################
-
+# Split by pollutant
 files_no2  <- files[grepl("no2_", files)]
 files_pm25 <- files[grepl("pm25_", files)]
 files_o3   <- files[grepl("o3_", files)]
 
-################################
-### MERGE FILES BY POLLUTANT ###
-################################
-
+# Merge files by pollutant
 no2  <- bind_rows(lapply(files_no2, load_interp))
 pm25 <- bind_rows(lapply(files_pm25, load_interp))
 o3   <- bind_rows(lapply(files_o3, load_interp))
 
-########################
-### MERGE POLLUTANTS ###
-########################
-
+# Merge pollutants
 interp_all <- no2 %>%
   full_join(pm25, by = c("date","comuna")) %>%
   full_join(o3, by = c("date","comuna"))
 
-#########################
-### ADD GEOMETRY BACK ###
-#########################
-
+# Add geometry back
 interp_all <- interpol %>%
   select(comuna, geometry) %>%
   right_join(interp_all, by = "comuna") %>%
   st_as_sf()
 
-#################
-### SORT DATA ###
-#################
-
+# Sort data
 interp_all <- interp_all %>%
   arrange(comuna, date)
 
