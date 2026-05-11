@@ -182,17 +182,21 @@ These outputs provide both deterministic (IDW) and geostatistical (OK) estimates
 
 ### Visualization Outputs
 
-The visualization pipeline produces publication-ready spatial outputs and animated temporal sequences. All graphics are fully customizable in terms of:
+The visualization pipeline generates publication-ready spatial maps and animated temporal sequences from the interpolated dataset.
 
-- **Date selection** (single-day maps)
-- **Temporal range** (animated GIFs)
-- **Color scales** (fixed or dynamic global ranges)
-- **Interpolation method display** (IDW, OK, or both)
-- **Pollutant type (PM2.5, O3, NO2)**
+Outputs are fully customizable in terms of:
 
-Generated visual products include:
+- **Pollutant type** (PM2.5, O3, NO2)
+- **Interpolation method displayed** (IDW or Ordinary Kriging)
+- **Temporal specification** (single dates or date ranges)
+- **Color palettes and scaling** (viridis, Blues, Reds; fixed or dynamic ranges)
+- **Map display options** (axis visibility and layout for publication)
+- **Export settings** (PNG maps and GIF animations with user-defined paths and filenames)
+- **Animation speed** (frames per second)
 
-- Static interpolation maps for user-defined individual dates
+Generated products include:
+
+- Static interpolation maps for selected dates
 - Animated GIFs showing temporal evolution over user-defined periods
 
 ### Example
