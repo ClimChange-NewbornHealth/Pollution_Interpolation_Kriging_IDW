@@ -2,23 +2,8 @@
 ### LIBRARIES ###
 #################
 
-# Data import/export
-library(rio)
-
 # Data manipulation and visualization
 library(tidyverse)
-
-# Data cleaning
-library(janitor)
-
-# Spatial vector data handling
-library(sf)
-
-# Plotting system
-library(ggplot2)
-
-# Multi-panel figure arrangement
-library(gridExtra)
 
 # Color palettes
 library(viridisLite)
@@ -26,9 +11,6 @@ library(RColorBrewer)
 
 # GIF generation
 library(gifski)
-
-# PNG image handling
-library(png)
 
 # Scaling utilities
 library(scales)
