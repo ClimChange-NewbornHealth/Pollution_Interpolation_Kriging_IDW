@@ -33,24 +33,10 @@ library(gstat)
 # - Monitoring station coordinates
 # - Pollutant concentrations
 # - A date column
-load("results/imputed_series.RData")
+load("Data/imputed_series.RData")
 
 # Load municipality coordinates where interpolation will be performed
-interpol <- read_excel("data/municipalidades.xlsx")
-
-# Separate coordinate string into latitude and longitude columns
-interpol <- interpol %>%
-  separate(municipalidad, into = c("lat", "long"), sep = ",") %>%
-  mutate(
-    lat = as.numeric(lat),
-    long = as.numeric(long)
-  )
-
-# Convert to sf spatial object using geographic coordinates
-interpol <- st_as_sf(interpol, coords = c("long", "lat"), crs = 4326)
-
-# Transform coordinates to UTM projection for spatial interpolation
-interpol <- st_transform(interpol, crs = 32719)
+load("Data/interpolation_locations.RData")
 
 ######################################
 ### SPATIAL INTERPOLATION FUNCTION ###
