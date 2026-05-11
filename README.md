@@ -146,22 +146,24 @@ The interpolation framework was originally designed to produce municipality-leve
 
 ## Repository Structure
 
+```text
 .
 ├── Code/
-│ ├── 1_interpolation.R
-│ └── 2_visualization.R
+│   ├── 1_interpolation.R             # Spatial interpolation workflow
+│   └── 2_visualization.R             # Static maps and animated GIF generation
 │
 ├── Data/
-│ ├── imputed_series.RData
-│ ├── interpolation_locations.RData
-│ └── municipalities_shape.RData
+│   ├── imputed_series.RData          # Imputed daily monitoring station observations (sf object)
+│   ├── interpolation_locations.RData # Municipality/building interpolation targets (sf object)
+│   └── municipalities_shape.RData    # Municipality polygon shapefile (sf object)
 │
-├── Figures/
+├── Figures/                          # Example figures and GIF outputs
 │
 ├── Output/
-│ └── interpolated_series.RData
+│   └── interpolated_series.RData     # Final municipality-level interpolation dataset
 │
 └── README.md
+```
 
 ## Result/Output
 
