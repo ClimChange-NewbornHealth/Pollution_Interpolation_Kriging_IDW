@@ -102,6 +102,24 @@ Software and main R packages:
   <b>Figure 1.</b> Left: Ordinary Kriging interpolation of PM2.5 for a specific date (2019-07-02). Right: Animated GIF showing the PM2.5 interpolation for December 2020. 
 </p>
 
+<p align="center">
+  <img src="Figures/o3_2019-07-02.png" width="45%">
+  <img src="Figures/o3_anim.gif" width="45%">
+</p>
+
+<p align="center">
+  <b>Figure 2.</b> Left: Ordinary Kriging interpolation of O3 for a specific date (2019-07-02). Right: Animated GIF showing the O3 interpolation for December 2020.
+</p>
+
+<p align="center">
+  <img src="Figures/no2_2019-07-02.png" width="45%">
+  <img src="Figures/no2_anim.gif" width="45%">
+</p>
+
+<p align="center">
+  <b>Figure 3.</b> Left: Ordinary Kriging interpolation of NO2 for a specific date (2019-07-02). Right: Animated GIF showing the NO2 interpolation for December 2020.
+</p>
+
 ## Acknowledgements
 
 - We acknowledge data from the Chilean National Air Quality Information System (SINCA) — [SINCA](https://sinca.mma.gob.cl/).
