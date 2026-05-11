@@ -12,11 +12,9 @@
 ![GitHub repo file or directory count](https://img.shields.io/github/directory-file-count/ClimChange-NewbornHealth/IDW_contamination)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/ClimChange-NewbornHealth/IDW_contamination)
 
-RESUMEN
+## Abstract
 
-**Fondecyt Nº 11240322**: Climate change and urban health: how air pollution, temperature, and city structure relate to preterm birth.
-
-:moneybag: Funding: Fondecyt de Iniciación en Investigación Nº 11240322.
+## Research Team and Conctact
 
 :mailbox_with_mail: Estela Blanco (<estela.blanco@uc.cl>) - **Principal Investigator**
 
@@ -25,6 +23,10 @@ RESUMEN
 :paperclip: Felipe Cornejo -  **Principal Investigator**
 
 :mailbox_with_mail: José Daniel Conejeros (<jdconejeros@uc.cl>) - **Research Collaborator**
+
+## Funding
+
+**Fondecyt de Iniciación en Investigación Nº 11240322**: Climate change and urban health: how air pollution, temperature, and city structure relate to preterm birth.
 
 ## Background
 
@@ -80,6 +82,8 @@ Software and main R packages:
 - `readxl`
 
 ## Code
+
+Structure
 
 ## Input
 
