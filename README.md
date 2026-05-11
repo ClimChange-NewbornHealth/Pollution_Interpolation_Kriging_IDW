@@ -91,6 +91,17 @@ Software and main R packages:
 - `lubridate`
 - `readxl`
 
+## Example Figures
+
+<p align="center">
+  <img src="pm25_2019-07-02.png" width="45%">
+  <img src="pm25_anim.gif" width="45%">
+</p>
+
+<p align="center">
+  <b>Figure 1.</b> Comparison of atmospheric pollutant interpolation methods.
+</p>
+
 ## Acknowledgements
 
 - We acknowledge data from the Chilean National Air Quality Information System (SINCA) — [SINCA](https://sinca.mma.gob.cl/).
