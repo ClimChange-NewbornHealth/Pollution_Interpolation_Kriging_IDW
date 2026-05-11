@@ -1,14 +1,14 @@
 # Integrated Spatial Interpolation and Visualization Framework for Atmospheric Pollution using Ordinary Kriging and Inverse Distance Weighting Methods
 
-![GitHub Repo stars](https://img.shields.io/github/stars/ClimChange-NewbornHealth/IDW_contamination)
-![GitHub watchers](https://img.shields.io/github/watchers/ClimChange-NewbornHealth/IDW_contamination)
-![GitHub forks](https://img.shields.io/github/forks/ClimChange-NewbornHealth/IDW_contamination)
-![GitHub commit activity](https://img.shields.io/github/commit-activity/t/ClimChange-NewbornHealth/IDW_contamination)
-![GitHub contributors](https://img.shields.io/github/contributors/ClimChange-NewbornHealth/IDW_contamination)
-![GitHub last commit](https://img.shields.io/github/last-commit/ClimChange-NewbornHealth/IDW_contamination)
-![GitHub language count](https://img.shields.io/github/languages/count/ClimChange-NewbornHealth/IDW_contamination)
-![GitHub top language](https://img.shields.io/github/languages/top/ClimChange-NewbornHealth/IDW_contamination)
-![GitHub License](https://img.shields.io/github/license/ClimChange-NewbornHealth/IDW_contamination)
+![GitHub Repo stars](https://img.shields.io/github/stars/ClimChange-NewbornHealth/Pollution_Interpolation_Kriging_IDW)
+![GitHub watchers](https://img.shields.io/github/watchers/ClimChange-NewbornHealth/Pollution_Interpolation_Kriging_IDW)
+![GitHub forks](https://img.shields.io/github/forks/ClimChange-NewbornHealth/Pollution_Interpolation_Kriging_IDW)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/t/ClimChange-NewbornHealth/Pollution_Interpolation_Kriging_IDW)
+![GitHub contributors](https://img.shields.io/github/contributors/ClimChange-NewbornHealth/Pollution_Interpolation_Kriging_IDW)
+![GitHub last commit](https://img.shields.io/github/last-commit/ClimChange-NewbornHealth/Pollution_Interpolation_Kriging_IDW)
+![GitHub language count](https://img.shields.io/github/languages/count/ClimChange-NewbornHealth/Pollution_Interpolation_Kriging_IDW)
+![GitHub top language](https://img.shields.io/github/languages/top/ClimChange-NewbornHealth/Pollution_Interpolation_Kriging_IDW)
+![GitHub License](https://img.shields.io/github/license/ClimChange-NewbornHealth/Pollution_Interpolation_Kriging_IDW)
 ![GitHub repo file or directory count](https://img.shields.io/github/directory-file-count/ClimChange-NewbornHealth/IDW_contamination)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/ClimChange-NewbornHealth/IDW_contamination)
 
