@@ -14,6 +14,8 @@
 
 ## Abstract
 
+COMPLETE
+
 ## Research Team and Conctact
 
 :mailbox_with_mail: Estela Blanco (<estela.blanco@uc.cl>) - **Principal Investigator**
@@ -33,6 +35,8 @@
 Epidemiologic and policy analyses often require spatially complete estimates of air pollution exposure; however, monitoring stations are often unevenly distributed across space. To address this limitation, we apply both stochastic and deterministic spatial interpolation methods—Ordinary Kriging (OK) and Inverse Distance Weighting (IDW), respectively—to generate daily municipality-level estimates of PM2.5, O3, and NO2 based on observed concentrations from monitoring stations.
 
 ## Objective
+
+COMPLETE
 
 ## Methods
 
@@ -83,7 +87,7 @@ Software and main R packages:
 
 ## Code
 
-Structure
+COMPLETE (ADD STRUCTURE)
 
 ## Input
 
@@ -111,7 +115,7 @@ Structure
 </p>
 
 <p align="center">
-  <b>Figure 1.</b> Left: Ordinary Kriging interpolation of PM2.5 for a specific date (2019-07-02). Right: Animated GIF showing the PM2.5 interpolation for December 2020. 
+  <b>Figure 1.</b> Left: OK interpolation of PM2.5 for 2019-07-02. Right: Animated GIF showing the PM2.5 interpolation for December 2020. 
 </p>
 
 <p align="center">
@@ -120,7 +124,7 @@ Structure
 </p>
 
 <p align="center">
-  <b>Figure 2.</b> Left: Ordinary Kriging interpolation of O3 for a specific date (2019-07-02). Right: Animated GIF showing the O3 interpolation for December 2020.
+  <b>Figure 2.</b> Left: OK interpolation of O3 for 2019-07-02. Right: Animated GIF showing the O3 interpolation for December 2020.
 </p>
 
 <p align="center">
@@ -129,10 +133,10 @@ Structure
 </p>
 
 <p align="center">
-  <b>Figure 3.</b> Left: Ordinary Kriging interpolation of NO2 for a specific date (2019-07-02). Right: Animated GIF showing the NO2 interpolation for December 2020.
+  <b>Figure 3.</b> Left: OK interpolation of NO2 for 2019-07-02. Right: Animated GIF showing the NO2 interpolation for December 2020.
 </p>
 
 ## Acknowledgements
 
-- We acknowledge data from the Chilean National Air Quality Information System (SINCA) — [SINCA](https://sinca.mma.gob.cl/).
+We acknowledge data from the Chilean National Air Quality Information System (SINCA) — [SINCA](https://sinca.mma.gob.cl/).
 
