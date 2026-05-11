@@ -35,7 +35,7 @@ COMPLETE
 Epidemiologic and policy analyses often require spatially complete estimates of air pollution exposure; however, monitoring stations are often unevenly distributed across space. To address this limitation, we apply both stochastic and deterministic spatial interpolation methods—Ordinary Kriging (OK) and Inverse Distance Weighting (IDW), respectively—to generate daily municipality-level estimates of PM2.5, O3, and NO2 based on observed concentrations from monitoring stations.
 
 <p align="center">
-  <img src="Figures/field.png" width="100%">
+  <img src="Figures/field.png" width="90%">
 </p>
 
 <p align="center">
