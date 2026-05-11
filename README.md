@@ -94,8 +94,8 @@ Software and main R packages:
 ## Example Figures
 
 <p align="center">
-  <img src="pm25_2019-07-02.png" width="45%">
-  <img src="pm25_anim.gif" width="45%">
+  <img src="./pm25_2019-07-02.png" style="width:45%; margin-right:10px;">
+  <img src="./pm25_anim.gif" style="width:45%;">
 </p>
 
 <p align="center">
