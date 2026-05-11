@@ -164,18 +164,38 @@ The interpolation framework was originally designed to produce municipality-leve
 │
 └── README.md
 ```
+## Result
 
-## Result/Output
+### Interpolated Dataset
 
-- Daily municipality-level interpolated concentrations for PM2.5, O3, and NO2 ([`Output/interpolated_series.RData`](Output/interpolated_series.RData)). Prediction outputs include:
-  - IDW predictions
-  - OK predictions
-  - OK variance
-  - OK lower and upper confidence intervals (user-defined alpha level)
+The interpolation workflow generates daily municipality-level pollutant concentrations for PM2.5, O3, and NO2, stored in [`Output/interpolated_series.RData`](Output/interpolated_series.RData).
 
-- Visualization outputs include:
-  - Customizable interpolation maps for user-defined individual date
-  - Animated GIFs showing temporal changes over user-defined date ranges
+For each pollutant and date, the output dataset includes:
+
+- `*_idw_pred`: Estimated pollutant concentration using Inverse Distance Weighting (IDW)
+- `*_ok_pred`: Predicted concentration using Ordinary Kriging (OK)
+- `*_ok_var`: Variance for OK predictions
+- `*_ok_lci`: Lower bound of the confidence interval for OK predictions
+- `*_ok_uci`: Upper bound of the confidence interval for OK predictions  
+
+These outputs provide both deterministic (IDW) and geostatistical (OK) estimates, allowing uncertainty-aware exposure assessment.
+
+### Visualization Outputs
+
+The visualization pipeline produces publication-ready spatial outputs and animated temporal sequences. All graphics are fully customizable in terms of:
+
+- **Date selection** (single-day maps)
+- **Temporal range** (animated GIFs)
+- **Color scales** (fixed or dynamic global ranges)
+- **Interpolation method display** (IDW, OK, or both)
+- **Pollutant type (PM2.5, O3, NO2)**
+
+Generated visual products include:
+
+- Static interpolation maps for user-defined individual dates
+- Animated GIFs showing temporal evolution over user-defined periods
+
+### Example
 
 <p align="center">
   <img src="Figures/pm25_2019-07-02.png" width="22%">
@@ -185,7 +205,7 @@ The interpolation framework was originally designed to produce municipality-leve
 </p>
 
 <p align="center">
-  <b>Figure 2.</b> Left to right: Ordinary Kriging (OK) interpolation of PM2.5 for 2019-07-02, IDW interpolation of PM2.5 for 2019-07-02, animated GIF showing OK interpolation during December 2020, and animated GIF showing IDW interpolation during December 2020.
+  <b>Figure 2.</b> PM2.5 interpolation results. Static maps: Ordinary Kriging (OK) and IDW for 2019-07-02. Animated outputs show temporal evolution during a user-defined period (December 2020).
 </p>
 
 <p align="center">
@@ -196,7 +216,7 @@ The interpolation framework was originally designed to produce municipality-leve
 </p>
 
 <p align="center">
-  <b>Figure 3.</b> Left to right: Ordinary Kriging (OK) interpolation of O3 for 2019-07-02, IDW interpolation of O3 for 2019-07-02, animated GIF showing OK interpolation during December 2020, and animated GIF showing IDW interpolation during December 2020.
+  <b>Figure 3.</b> Ozone (O3) interpolation results. Static maps and animated temporal evolution using OK and IDW methods.
 </p>
 
 <p align="center">
@@ -207,7 +227,7 @@ The interpolation framework was originally designed to produce municipality-leve
 </p>
 
 <p align="center">
-  <b>Figure 4.</b> Left to right: Ordinary Kriging (OK) interpolation of NO2 for 2019-07-02, IDW interpolation of NO2 for 2019-07-02, animated GIF showing OK interpolation during December 2020, and animated GIF showing IDW interpolation during December 2020.
+  <b>Figure 4.</b> Nitrogen dioxide (NO2) interpolation results. Static maps and animated temporal evolution using OK and IDW methods.
 </p>
 
 ## Acknowledgements
