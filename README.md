@@ -66,18 +66,6 @@ Key functions implemented in the interpolation workflow:
   - Iterates interpolation by year and pollutant.
   - Saves yearly interpolation outputs as temporary `.RData` files for later reconstruction.
 
-Final outputs:
-
-- Daily municipality-level interpolated concentrations for:
-  - PM2.5
-  - O3
-  - NO2
-- Prediction outputs include:
-  - IDW predictions
-  - Ordinary Kriging predictions
-  - Kriging variance
-  - Lower and upper confidence intervals
-
 Software and main R packages:
 
 - R
@@ -90,6 +78,26 @@ Software and main R packages:
 - `tidyr`
 - `lubridate`
 - `readxl`
+
+## Code
+
+## Input
+
+- Imputed series
+- Municipal government building locationes
+- shape
+
+## Output
+
+- Daily municipality-level interpolated concentrations for:
+  - PM2.5
+  - O3
+  - NO2
+- Prediction outputs include:
+  - IDW predictions
+  - Ordinary Kriging predictions
+  - Kriging variance
+  - Lower and upper confidence intervals
 
 ## Example Figures
 
