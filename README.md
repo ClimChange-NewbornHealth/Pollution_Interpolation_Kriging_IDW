@@ -28,7 +28,7 @@ COMPLETE
 
 ## Funding
 
-**Fondecyt de Iniciación en Investigación Nº 11240322**: Climate change and urban health: how air pollution, temperature, and city structure relate to preterm birth.
+**Fondecyt de Iniciación en Investigación Nº 11240322**: *Climate change and urban health: how air pollution, temperature, and city structure relate to preterm birth*. Proyecto financiado por la Agencia Nacional de Investigación y Desarrollo (ANID) a través del programa Fondecyt de Iniciación, y dirigido por Estela Blanco.
 
 ## Background
 
