@@ -184,6 +184,11 @@ These outputs provide both deterministic (IDW) and geostatistical (OK) estimates
 
 The visualization pipeline generates publication-ready spatial maps and animated temporal sequences from the interpolated dataset.
 
+Generated figures include:
+
+- Static interpolation maps for selected dates
+- Animated GIFs showing temporal evolution over user-defined periods
+
 Outputs are fully customizable in terms of:
 
 - **Pollutant type** (PM2.5, O3, NO2)
@@ -193,11 +198,6 @@ Outputs are fully customizable in terms of:
 - **Map display options** (axis visibility and layout for publication)
 - **Export settings** (PNG maps and GIF animations with user-defined paths and filenames)
 - **Animation speed** (frames per second)
-
-Generated products include:
-
-- Static interpolation maps for selected dates
-- Animated GIFs showing temporal evolution over user-defined periods
 
 ### Example
 
