@@ -94,12 +94,12 @@ Software and main R packages:
 ## Example Figures
 
 <p align="center">
-  <img src="Figures/pm25_2019-07-02" width="45%">
+  <img src="Figures/pm25_2019-07-02.png" width="45%">
   <img src="Figures/pm25_anim.gif" width="45%">
 </p>
 
 <p align="center">
-  <b>Figure 1.</b> Left: Map for OK interpolation of PM2.5 for an specific date (02-07-2019). Right: Animated GIF for the OK interpolation of the complete month of december 2020. 
+  <b>Figure 1.</b> Left: Ordinary Kriging interpolation of PM2.5 for a specific date (2019-07-02). Right: Animated GIF showing the PM2.5 interpolation for December 2020. 
 </p>
 
 ## Acknowledgements
