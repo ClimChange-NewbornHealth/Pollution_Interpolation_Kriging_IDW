@@ -14,7 +14,7 @@
 
 ## Abstract
 
-COMPLETE
+CPOMPLETAR TEXTO
 
 ## Authors and Contact
 
@@ -30,6 +30,12 @@ COMPLETE
 
 **FONDECYT Initiation Research Grant Nº 11240322**: *Climate change and urban health: how air pollution, temperature, and city structure relate to preterm birth*. Project funded by the National Agency for Research and Development (ANID) through the FONDECYT Initiation program, and led by Estela Blanco.
 
+AGREGAR FONDECYT DE MAURICIO
+
+## Acknowledgements
+
+We acknowledge data from the Chilean National Air Quality Information System (SINCA) — [SINCA](https://sinca.mma.gob.cl/).
+
 ## Background
 
 Epidemiologic and policy analyses often require spatially complete estimates of air pollution exposure; however, monitoring stations are often unevenly distributed across space. To address this limitation, we apply both stochastic and deterministic spatial interpolation methods—Ordinary Kriging (OK) and Inverse Distance Weighting (IDW), respectively—to generate daily municipality-level estimates of PM2.5, O3, and NO2 based on observed concentrations from monitoring stations of the National Air Quality Information System (SINCA).
@@ -44,7 +50,7 @@ Epidemiologic and policy analyses often require spatially complete estimates of 
 
 ## Objective
 
-COMPLETE
+COMPLETAR TEXTO
 
 ## Methods
 
@@ -88,10 +94,7 @@ Software and main R packages:
 - `gstat`
 - `automap`
 - `tidyverse`
-- `dplyr`
-- `tidyr`
 - `lubridate`
-- `readxl`
 
 ## Code
 
@@ -143,7 +146,4 @@ COMPLETE (ADD STRUCTURE)
   <b>Figure 4.</b> Left: OK interpolation of NO2 for 2019-07-02. Right: Animated GIF showing the NO2 interpolation for December 2020.
 </p>
 
-## Acknowledgements
-
-We acknowledge data from the Chilean National Air Quality Information System (SINCA) — [SINCA](https://sinca.mma.gob.cl/).
 
