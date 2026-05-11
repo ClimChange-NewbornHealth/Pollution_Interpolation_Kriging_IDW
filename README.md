@@ -18,28 +18,28 @@ COMPLETE
 
 ## Research Team and Conctact
 
-:mailbox_with_mail: Estela Blanco (<estela.blanco@uc.cl>) - **Principal Investigator**
+:mailbox: Estela Blanco (<estela.blanco@uc.cl>) - **Principal Investigator**
 
 :mailbox_with_mail: Ismael Bravo (<ismael.bravo.rodriguez@gmail.com>) - **Principal Investigator  - Repository Manager**
 
-:paperclip: Felipe Cornejo -  **Principal Investigator**
+:mailbox: Felipe Cornejo (<fel.cornejo.n@gmail.com>) -  **Principal Investigator**
 
-:mailbox_with_mail: José Daniel Conejeros (<jdconejeros@uc.cl>) - **Research Collaborator**
+:mailbox: José Daniel Conejeros (<jdconejeros@uc.cl>) - **Research Collaborator**
 
 ## Funding
 
-**Fondecyt de Iniciación en Investigación Nº 11240322**: *Climate change and urban health: how air pollution, temperature, and city structure relate to preterm birth*. Proyecto financiado por la Agencia Nacional de Investigación y Desarrollo (ANID) a través del programa Fondecyt de Iniciación, y dirigido por Estela Blanco.
+**FONDECYT Initiation Research Grant Nº 11240322**: *Climate change and urban health: how air pollution, temperature, and city structure relate to preterm birth*. Project funded by the National Agency for Research and Development (ANID) through the FONDECYT Initiation program, and led by Estela Blanco.
 
 ## Background
 
-Epidemiologic and policy analyses often require spatially complete estimates of air pollution exposure; however, monitoring stations are often unevenly distributed across space. To address this limitation, we apply both stochastic and deterministic spatial interpolation methods—Ordinary Kriging (OK) and Inverse Distance Weighting (IDW), respectively—to generate daily municipality-level estimates of PM2.5, O3, and NO2 based on observed concentrations from monitoring stations.
+Epidemiologic and policy analyses often require spatially complete estimates of air pollution exposure; however, monitoring stations are often unevenly distributed across space. To address this limitation, we apply both stochastic and deterministic spatial interpolation methods—Ordinary Kriging (OK) and Inverse Distance Weighting (IDW), respectively—to generate daily municipality-level estimates of PM2.5, O3, and NO2 based on observed concentrations from monitoring stations of the National Air Quality Information System (SINCA).
 
 <p align="center">
   <img src="Figures/field.png" width="90%">
 </p>
 
 <p align="center">
-  <b>Figure 1.</b> Left:. Right:. 
+  <b>Figure 1.</b> Left: Location and names of the SINCA monitoring network stations (red dots). Right: Location of monitoring stations with observed values (red dots) and municipal administration buildings to be interpolated (blue crosses).
 </p>
 
 ## Objective
@@ -54,7 +54,7 @@ COMPLETE
   - **Inverse Distance Weighting (IDW)** as a deterministic interpolation (`gstat` package).
   - **Ordinary Kriging (OK)** as a stochastic geostatistical interpolation method with automatic variogram fitting (`automap` package).
 - **Spatial framework**:
-  - Monitoring stations and municipal government building locations are transformed from geographic coordinates (EPSG:4326) to UTM Zone 19S (EPSG:32719) to enable distance-based interpolation in meters.
+  - Monitoring stations and municipal administration building locations are transformed from geographic coordinates (EPSG:4326) to UTM Zone 19S (EPSG:32719) to enable distance-based interpolation in meters.
   - Daily municipality-level pollutant estimates are generated from monitoring station observations.
 - **Core interpolation parameters** (fully customizable within the interpolation function):
   - **IDW**
@@ -100,7 +100,7 @@ COMPLETE (ADD STRUCTURE)
 ## Input
 
 - Imputed series
-- Municipal government building locationes
+- Municipal administration building locationes
 - shape
 
 ## Output
