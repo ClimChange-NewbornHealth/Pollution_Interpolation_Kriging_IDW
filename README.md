@@ -99,13 +99,13 @@ COMPLETE (ADD STRUCTURE)
 
 ## Input
 
-- SINCA imputed series (`Data/imputed_series.RData`)
-- Municipal administration building locations (`Data/interpolation_locations.RData`)
-- Santiago shapefiles (`Data/municipalities_shape.RData`)
+- SINCA imputed series ([`Data/imputed_series.RData`](Data/imputed_series.RData))
+- Municipal administration building locations ([`Data/interpolation_locations.RData`](Data/interpolation_locations.RData))
+- Santiago shapefiles ([`Data/municipalities_shape.RData`](Data/municipalities_shape.RData))
 
 ## Output
 
-- Daily municipality-level interpolated concentrations for PM2.5, O3, and NO2 (`Output/interpolated_series.RData`). Prediction outputs include:
+- Daily municipality-level interpolated concentrations for PM2.5, O3, and NO2 ([`Output/interpolated_series.RData`](Output/interpolated_series.RData)). Prediction outputs include:
   - IDW predictions
   - OK predictions
   - OK variance
@@ -114,6 +114,7 @@ COMPLETE (ADD STRUCTURE)
 - Visualization outputs include:
   - Customizable interpolation maps for user-defined individual date
   - Animated GIFs showing temporal changes over user-defined date ranges
+
 
 <p align="center">
   <img src="Figures/pm25_2019-07-02.png" width="45%">
