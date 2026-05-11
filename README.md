@@ -1,4 +1,4 @@
-# Interpolation of Atmospheric Pollutants (Ozone, Nitrogen Dioxide, and Fine Particulate Matter) using Ordinary Kriging and Inverse Distance Weighting Methodologies :city_sunrise:
+# Interpolation of Atmospheric Pollutants (Ozone, Nitrogen Dioxide, and Fine Particulate Matter) using Ordinary Kriging and Inverse Distance Weighting Methodologies
 
 ![GitHub Repo stars](https://img.shields.io/github/stars/ClimChange-NewbornHealth/IDW_contamination)
 ![GitHub watchers](https://img.shields.io/github/watchers/ClimChange-NewbornHealth/IDW_contamination)
