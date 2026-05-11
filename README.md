@@ -120,30 +120,35 @@ COMPLETE (ADD STRUCTURE)
 
 
 <p align="center">
-  <img src="Figures/pm25_2019-07-02.png" width="45%">
-  <img src="Figures/pm25_anim.gif" width="45%">
+  <img src="Figures/pm25_2019-07-02.png" width="22%">
+  <img src="Figures/pm25_idw_2019-07-02.png" width="22%">
+  <img src="Figures/pm25_anim.gif" width="22%">
+  <img src="Figures/pm25_idw_anim.gif" width="22%">
 </p>
 
 <p align="center">
-  <b>Figure 2.</b> Left: OK interpolation of PM2.5 for 2019-07-02. Right: Animated GIF showing the PM2.5 interpolation for December 2020. 
+  <b>Figure 2.</b> Left to right: Ordinary Kriging (OK) interpolation of PM2.5 for 2019-07-02, IDW interpolation of PM2.5 for 2019-07-02, animated GIF showing OK interpolation during December 2020, and animated GIF showing IDW interpolation during December 2020.
 </p>
 
 <p align="center">
-  <img src="Figures/o3_2019-07-02.png" width="45%">
-  <img src="Figures/o3_anim.gif" width="45%">
+  <img src="Figures/o3_2019-07-02.png" width="22%">
+  <img src="Figures/o3_idw_2019-07-02.png" width="22%">
+  <img src="Figures/o3_anim.gif" width="22%">
+  <img src="Figures/o3_idw_anim.gif" width="22%">
 </p>
 
 <p align="center">
-  <b>Figure 3.</b> Left: OK interpolation of O3 for 2019-07-02. Right: Animated GIF showing the O3 interpolation for December 2020.
+  <b>Figure 3.</b> Left to right: Ordinary Kriging (OK) interpolation of O3 for 2019-07-02, IDW interpolation of O3 for 2019-07-02, animated GIF showing OK interpolation during December 2020, and animated GIF showing IDW interpolation during December 2020.
 </p>
 
 <p align="center">
-  <img src="Figures/no2_2019-07-02.png" width="45%">
-  <img src="Figures/no2_anim.gif" width="45%">
+  <img src="Figures/no2_2019-07-02.png" width="22%">
+  <img src="Figures/no2_idw_2019-07-02.png" width="22%">
+  <img src="Figures/no2_anim.gif" width="22%">
+  <img src="Figures/no2_idw_anim.gif" width="22%">
 </p>
 
 <p align="center">
-  <b>Figure 4.</b> Left: OK interpolation of NO2 for 2019-07-02. Right: Animated GIF showing the NO2 interpolation for December 2020.
+  <b>Figure 4.</b> Left to right: Ordinary Kriging (OK) interpolation of NO2 for 2019-07-02, IDW interpolation of NO2 for 2019-07-02, animated GIF showing OK interpolation during December 2020, and animated GIF showing IDW interpolation during December 2020.
 </p>
-
 
