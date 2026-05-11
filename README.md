@@ -90,3 +90,8 @@ Software and main R packages:
 - `tidyr`
 - `lubridate`
 - `readxl`
+
+## Acknowledgements
+
+- We acknowledge data from the Chilean National Air Quality Information System (SINCA) — [SINCA](https://sinca.mma.gob.cl/).
+
