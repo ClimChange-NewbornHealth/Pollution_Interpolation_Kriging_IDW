@@ -11,6 +11,7 @@
 ![GitHub License](https://img.shields.io/github/license/ClimChange-NewbornHealth/Pollution_Interpolation_Kriging_IDW)
 ![GitHub repo file or directory count](https://img.shields.io/github/directory-file-count/ClimChange-NewbornHealth/Pollution_Interpolation_Kriging_IDW)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/ClimChange-NewbornHealth/Pollution_Interpolation_Kriging_IDW)
+[![DOI](https://zenodo.org/badge/1235123671.svg)](https://doi.org/10.5281/zenodo.20145005)
 
 ## Overview
 
