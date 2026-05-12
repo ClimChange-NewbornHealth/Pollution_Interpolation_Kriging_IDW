@@ -138,7 +138,7 @@ The framework was implemented in R using the following main packages:
 - `RColorBrewer`
 - `scales`
 
-### Technical Notes and Methodological Considerations
+### Methodological Considerations
 
 Although the workflow primarily relies on the modern `sf` spatial framework, certain interpolation steps make use of `sp` objects to ensure compatibility with the automatic variogram fitting procedures implemented in the `automap` package. In particular, the `autofitVariogram()` function requires objects of class `sp`, which justifies this temporary conversion within the pipeline.
 
