@@ -144,6 +144,12 @@ Although the workflow primarily relies on the modern `sf` spatial framework, cer
 
 The interpolation framework was originally designed to produce municipality-level aggregated exposure estimates. For this reason, pollutant concentrations are interpolated at a single representative location per municipality, specifically the municipal administration building, which in many cases is considered more representative of urban exposure conditions than simple geometric centroids. However, the workflow remains fully generalizable and can be applied to alternative spatial supports, including regular raster grids or any user-defined set of prediction locations.
 
+For Ordinary Kriging interpolation, the workflow prioritizes automatic variogram fitting through `autofitVariogram()` rather than manual specification of variogram hyperparameters such as `model`, `cutoff` or `width`. This decision was made because the spatial configuration and availability of monitoring observations vary substantially across dates, making a single fixed parameterization unsuitable for all interpolation scenarios. Automatic fitting therefore provides greater flexibility and robustness across heterogeneous temporal conditions.
+
+In addition, the Talagante monitoring station was intentionally incorporated into the interpolation framework because it contributes to extending the effective spatial correlation `cutoff` during variogram fitting. This reduces the tendency toward excessively local interpolation behavior and improves stability in the spatial prediction process.
+
+Nevertheless, isolated cases may occur in dates with limited spatial variability or weak spatial correlation structures, where kriging predictions tend toward near-constant values across the spatial domain. These situations are uncommon and are estimated to affect less than approximately 3% of the total interpolated dates.
+
 ## Repository Structure
 
 ```text
@@ -169,7 +175,7 @@ Pollution_Interpolation_Kriging_IDW
 
 ### Interpolated Dataset
 
-The interpolation workflow generates daily municipality-level pollutant concentrations for PM2.5, O3, and NO2, stored in [`Output/interpolated_series.RData`](Output/interpolated_series.RData).
+The interpolation workflow generates daily municipality-level pollutant concentrations for PM2.5, O3, and NO2, stored in [`Output/interpolated_series.RData`](Output/interpolated_series.RData). The dataset currently includes interpolated data covering the 2009–2020 period, a temporal range selected to support exposure assessment in maternal-child health studies focused on pregnancies and birth outcomes occurring between 2010 and 2020 in Santiago, Chile.
 
 For each pollutant and date, the output dataset includes:
 
