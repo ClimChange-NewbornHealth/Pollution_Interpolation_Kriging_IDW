@@ -147,7 +147,8 @@ The interpolation framework was originally designed to produce municipality-leve
 ## Repository Structure
 
 ```text
-.
+Pollution_Interpolation_Kriging_IDW
+│
 ├── Code/
 │   ├── 1_interpolation.R               # Spatial interpolation workflow
 │   └── 2_visualization.R               # Static maps and animated GIF generation
