@@ -172,7 +172,7 @@ Pollution_Interpolation_Kriging_IDW
 │
 └── README.md
 ```
-## Result
+## Results
 
 ### Interpolated Dataset
 
